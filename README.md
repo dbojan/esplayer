@@ -24,13 +24,15 @@ Download apk to install on android
 - recording
 - bookmarks (on pause new bookmark (M in lower left part of screen) is created. To go to previous bookmark, click on m)
 - custom auto update time for list
-- support for remote epg/xml (#EXTM3U url-tvg="https://example.com")
-- support for epg/xml next to m3u file
+- support for epg/xml (#EXTM3U url-tvg="https://example.com"), ('remote xml')
+- support for epg/xml next to m3u file ('local xml')
 - support for tmdb info (put tmdb.key in documents folder. inside just put your api key from https://www.themoviedb.org/ )
 - browse Documents/media folder using Browse button.
-- use double tap or on remote: settings/play/pause key to go to channellist
+- use double tap (or remote key(s): settings/play/pause) to go to channellist
 - use remote button 'aspect ratio' to go to settings screen directly
-- custom remote buttons settings ---
+- use remote button `stop` to exit app
+- user remote button rewind and fast forward to go to prev/next playlist. on android use two fingers down or up swipe on the screen.
+- custom remote buttons settings more info: [android_2](android_2.md)
 - support for (pluto) subtitles
 - custom speed, and volume inside app
 - custom font color and shading for subtitles
@@ -38,20 +40,20 @@ Download apk to install on android
 - playlist filter inside app
 - filter url in esplayer.txt, so you can have always fresh favorite list:
   `http://mysite.com/index.html?filtername=one show|another show|third show`
-- more filters: sort list: `filtersort=yes`  show just group western: `filtergrouptitle=western`  `filterrandom=yes` (randomize list)
+- more filters for urls in esplayer.txt: sort list: `filtersort=yes`  show just group western: `filtergrouptitle=western`  `filterrandom=yes` (randomize list)
 - you can group filters using ? or & `?filtername=sport|news&filtersort=yes`  or with multiple names `?filtername=sport&filtersort=yes`
 - support for audio books: mka: opus codec, cover image, chapters - chapter marks in osd, osd menu/goto, seekbar dots ; opus, mkb, mp3, mp4  formats
 - support for file/chanel tags, using channellist/osd menu, or remote color buttons (red, green,yellow, blue)
 - export import tags and (book)marks from settings screen
 - multiple level for logging: off, level 2 only, all.
-- 
 
-Documents/esplayer.txt content: 
+  
+Documents/esplayer.txt content example: 
 ```
 http://mysite1.com/list1.m3u  
 http://mysite2.com/list2.m3u  
 ```
-more info: [android_2](android_2.md)
+
 
 
 
