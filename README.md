@@ -2,20 +2,43 @@
 
 2026-09-07-08-42-53
 
-Download apk from esplayer_android folder to install on android
-
-- supports clearkey 1 and multiple keys encrypted dash streams
-- written in kotlin multiplatform + exoplayer
+Download apk to install on android
 
 **how to use**
 
-- tap: pause, show playlist, and icons for: prev channel, channels list, settings, next channel
+- put URLS to your playlist in Documents/esplayer.txt, or put m3u files in Documents folder (on android, on desktop put it next to appimage/exe file)
+- tap: pause
 - up on remote/swipe from up to down: prev channel
 - down on remote/swipe from down to up/dpad down: next channel
-- left on remote/swipe from left to right: show channel list
-- right on remote/swipe from right to left: show settings
+- left on remote/swipe from left to right: rewind
+- right on remote/swipe from right to left: fast forward
+- double tap: channel list. 
 
-- you can put URLS to your playlist in Documents/esplayer.txt, so you do not have to type them in manually: 
+
+### features
+- written in kotlin multiplatform + exoplayer (android)
+- supports clearkey (single, multiple keys) encrypted dash streams
+- supports widevine
+- supports radio channels with screen off
+- - support for http,sftp,extinfo playlists
+- recording
+- bookmarks (on pause new bookmark (M in lower left part of screen) is created. To go to previous bookmark, click on m)
+- custom auto update setttings
+- support for remote epg/xml (#EXTM3U url-tvg="https://example.com"), next to m3u file,
+- support for tmdb info (put tmdb.key in documents folder. inside just put your api key from https://www.themoviedb.org/ )
+- browse Documents/media folder using Browse button.
+- use double tap or on remote: settings/play/pause key to go to channellist
+- use remote button 'aspect ratio' to go to settings screen directly
+- support for (pluto) subtitles
+- custom speed, and volume inside app
+- custom font color and shading for subtitles
+- support m3u(8).gz and xml.gz compression
+- playlist filter inside app
+- filter url in esplayer.txt, so you can have always fresh favorite list:
+  http://mysite.com/index.html?filtername=one show|another show|thir show
+- more filters: sort list: `filtersort=yes`  show just group western: `filtergrouptitle=western`  `filterrandom=yes` (randomize list)
+- you can group filters using ? or & `?filtername=sport|news&filtersort=yes`  or with multiple names `?filtername=sport&filtersort=yes`
+  
 
 Documents/esplayer.txt content: 
 ```
@@ -23,27 +46,6 @@ http://mysite1.com/list1.m3u
 http://mysite2.com/list2.m3u  
 ```
 
-- you can search playlist, and save the result to new playlist
-- you can put local playlists files in Documents folder, and esplayer will add them. 
-(this is also used for saving search to new playlist)  
-
-local_playlist_example.m3u:
-```
-#EXTM3U
-#EXTINF:-1,stream 1
-http://website.com/list.m3u
-#EXTINF:-1,stream 2
-http://website2/list.m3u
-```
-- you can add playlist(s): http://www.something.../play.m3u from settings screen
-
-- from the channellist you can switch playlists or update them
-- added support for subtitles, more settings.
-
-- when you tap on screen bookmark is added, (letter m or M (New) in bottom left). to go to bookmark tap on that letter
-
-- sftp, http lists are also supported
-- list.xml(.gz) near list.m3u(.gz) also supported (local xml), for epg, just make sure they are accessible, like on local web server
 
 **ver**
 
