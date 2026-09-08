@@ -20,7 +20,7 @@ Download apk to install on android
 - supports clearkey (single, multiple keys) encrypted dash streams
 - supports widevine
 - supports radio channels with screen off
-- - support for http,sftp,extinfo playlists
+- support for http,sftp,extinfo playlists
 - recording
 - bookmarks (on pause new bookmark (M in lower left part of screen) is created. To go to previous bookmark, click on m)
 - custom auto update setttings
