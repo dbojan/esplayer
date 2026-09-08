@@ -7,13 +7,6 @@ Download apk to install on android
 **how to use**
 
 - put URLS to your playlist in Documents/esplayer.txt, or put m3u files in Documents folder (on android, on desktop put it next to appimage/exe file)
-- tap: pause
-- up on remote/swipe from up to down: prev channel
-- down on remote/swipe from down to up/dpad down: next channel
-- left on remote/swipe from left to right: rewind
-- right on remote/swipe from right to left: fast forward
-- double tap: channel list. 
-
 
 ### features
 - written in kotlin multiplatform + exoplayer (android)
@@ -21,17 +14,12 @@ Download apk to install on android
 - supports widevine
 - supports radio channels with screen off
 - support for http,sftp,extinfo playlists
-- recording
 - bookmarks (on pause new bookmark (M in lower left part of screen) is created. To go to previous bookmark, click on m)
 - custom auto update time for list
 - support for epg/xml (#EXTM3U url-tvg="https://example.com"), ('remote xml')
 - support for epg/xml next to m3u file ('local xml')
 - support for tmdb info (put tmdb.key in documents folder. inside just put your api key from https://www.themoviedb.org/ )
 - browse Documents/media folder using Browse button.
-- use double tap (or remote key(s): settings/play/pause) to go to channellist
-- use remote button 'aspect ratio' to go to settings screen directly
-- use remote button 'stop' to exit app
-- user remote button rewind and fast forward to go to prev/next playlist. on android use two fingers down or up swipe on the screen.
 - custom remote buttons settings more info: [android_2](android_2.md)
 - support for (pluto) subtitles
 - custom speed, and volume inside app
@@ -47,7 +35,23 @@ Download apk to install on android
 - export import tags and (book)marks from settings screen
 - multiple level for logging: off, level 2 only, all.
 
-  
+
+| Function | Android | TV remote buttons |
+|:--------|:------:|:------:|
+|pause|screen tap|ok|
+|prev/next channel|swipe up/down|up/down, or channel up/down|
+|channellist|double tap| back on player screen|
+|rewind/fast forward|swipe left/right|arrow left/right|
+|prev/next list|two fingers swipe up/down|rewind/fast forward|
+|osd menu|tap and hold|settings/menu/play/pause|
+|epg|osd menu|txt/epg|
+|settings screen directly|osd menu, or through channellist screen|aspect ratio|
+|exit|x icon on player screen|stop|
+|recording | osd menu | rec|
+|go to mark|tap on m/M|fav/recall|
+|delete mark|osd menu|backspace|
+|tag colors|osd menu|color buttons (red, green, yellow, blue)
+
 Documents/esplayer.txt content example: 
 ```
 http://mysite1.com/list1.m3u  
@@ -83,7 +87,7 @@ fixes and new features
 
 - uses electron (unfortunately) + shaka player
 - source code is in esplayer_desktop folder, here in github page.
-- use scroll wheel or key up/down, page up/down to switch channels
+- switch channels: use scroll wheel or key up/down, page up/down
 - supported clearkey, widevine (although if channels require l1 hardware level, probably wont work)
 - supported: epg, subtitles (pluto).
 - put esplayer.txt with links to .m3u/.m3u8, or their gzipped version next to appimage, and start app
