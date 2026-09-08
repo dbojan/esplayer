@@ -91,5 +91,9 @@ to create appimage yourself (delete dist folder first):
 ```
 npm run dist:linux
 ```
+on windows, to create portable and setup version of app, use:
+```
+npm run dist:win
+```
 
   
