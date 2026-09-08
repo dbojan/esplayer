@@ -81,7 +81,7 @@ http://mysite2.com/list2.m3u
 
 2026-09-07-08-42-53
 
-[windows and linux programs on google drive](https://drive.google.com/drive/folders/1g1VQJJlJ9GU8jronRg7ZgBzxREPsxAU-?usp=sharing)
+[linux and windows app on google drive](https://drive.google.com/drive/folders/1g1VQJJlJ9GU8jronRg7ZgBzxREPsxAU-?usp=sharing)
 
 - uses electron (unfortunately) + shaka player
 - source code is in esplayer_desktop folder, here in github page.
