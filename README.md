@@ -23,22 +23,28 @@ Download apk to install on android
 - support for http,sftp,extinfo playlists
 - recording
 - bookmarks (on pause new bookmark (M in lower left part of screen) is created. To go to previous bookmark, click on m)
-- custom auto update setttings
-- support for remote epg/xml (#EXTM3U url-tvg="https://example.com"), next to m3u file,
+- custom auto update time for list
+- support for remote epg/xml (#EXTM3U url-tvg="https://example.com")
+- support for epg/xml next to m3u file
 - support for tmdb info (put tmdb.key in documents folder. inside just put your api key from https://www.themoviedb.org/ )
 - browse Documents/media folder using Browse button.
 - use double tap or on remote: settings/play/pause key to go to channellist
 - use remote button 'aspect ratio' to go to settings screen directly
+- custom remote buttons settings ---
 - support for (pluto) subtitles
 - custom speed, and volume inside app
 - custom font color and shading for subtitles
 - support m3u(8).gz and xml.gz compression
 - playlist filter inside app
 - filter url in esplayer.txt, so you can have always fresh favorite list:
-  http://mysite.com/index.html?filtername=one show|another show|thir show
+  `http://mysite.com/index.html?filtername=one show|another show|third show`
 - more filters: sort list: `filtersort=yes`  show just group western: `filtergrouptitle=western`  `filterrandom=yes` (randomize list)
 - you can group filters using ? or & `?filtername=sport|news&filtersort=yes`  or with multiple names `?filtername=sport&filtersort=yes`
-  
+- support for audio books: mka: opus codec, cover image, chapters - chapter marks in osd, osd menu/goto, seekbar dots ; opus, mkb, mp3, mp4  formats
+- support for file/chanel tags, using channellist/osd menu, or remote color buttons (red, green,yellow, blue)
+- export import tags and (book)marks from settings screen
+- multiple level for loggings off, level 2 only, all.
+- 
 
 Documents/esplayer.txt content: 
 ```
