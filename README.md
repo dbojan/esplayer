@@ -50,7 +50,7 @@ Download apk to install on android
 |recording | osd menu | rec|
 |go to mark|tap on m/M|fav/recall|
 |delete mark|osd menu|backspace|
-|tag colors|osd menu|color buttons (red, green, yellow, blue)
+|colors tag|osd menu|color buttons (red, green, yellow, blue)
 
 Documents/esplayer.txt content example: 
 ```
