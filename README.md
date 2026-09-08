@@ -40,12 +40,12 @@ Download apk to install on android
 |:--------|:------:|:------:|
 |pause|screen tap|ok|
 |prev/next channel|swipe up/down|up/down, or channel up/down|
-|channellist|double tap| back on player screen|
+|channel list screen|double tap or clipboard icon on player screen| 'back' on player screen|
 |rewind/fast forward|swipe left/right|arrow left/right|
 |prev/next list|two fingers swipe up/down|rewind/fast forward|
 |osd menu|tap and hold|settings/menu/play/pause|
 |epg|osd menu|txt/epg|
-|settings screen directly|osd menu, or through channellist screen|aspect ratio|
+|settings screen|osd menu, or through channel list screen|aspect ratio|
 |exit|x icon on player screen|stop|
 |recording | osd menu | rec|
 |go to mark|tap on m/M|fav/recall|
@@ -59,12 +59,10 @@ http://mysite2.com/list2.m3u
 ```
 
 
-
-
 **ver**
 
 2026-09-07-08-42-53
-fixes and new features
+- fixes and new features
 
 2026-03-28-1
 - working on improving android tv ui.
