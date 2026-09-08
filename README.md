@@ -30,7 +30,7 @@ Download apk to install on android
 - browse Documents/media folder using Browse button.
 - use double tap (or remote key(s): settings/play/pause) to go to channellist
 - use remote button 'aspect ratio' to go to settings screen directly
-- use remote button `stop` to exit app
+- use remote button 'stop' to exit app
 - user remote button rewind and fast forward to go to prev/next playlist. on android use two fingers down or up swipe on the screen.
 - custom remote buttons settings more info: [android_2](android_2.md)
 - support for (pluto) subtitles
