@@ -5,7 +5,7 @@ Android version:
 
 You can set up custom action for buttons on the remote
 
-put file `remote.txt` in the Documents folder, <numerical code>=<screen>.<customaction>
+put file `remote.txt` in the Documents folder, `<numerical code>=<screen>.<customaction>`
 
 blank lines are ignored, additive-only (a matching line adds a trigger, never removes defaults). 
 
