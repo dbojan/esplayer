@@ -51,7 +51,7 @@ Documents/esplayer.txt content:
 http://mysite1.com/list1.m3u  
 http://mysite2.com/list2.m3u  
 ```
-more info: [android 2](android 2.md)
+more info: [android_2](android_2.md)
 
 
 
