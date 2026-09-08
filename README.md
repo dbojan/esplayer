@@ -43,7 +43,7 @@ Download apk to install on android
 - support for audio books: mka: opus codec, cover image, chapters - chapter marks in osd, osd menu/goto, seekbar dots ; opus, mkb, mp3, mp4  formats
 - support for file/chanel tags, using channellist/osd menu, or remote color buttons (red, green,yellow, blue)
 - export import tags and (book)marks from settings screen
-- multiple level for loggings off, level 2 only, all.
+- multiple level for logging: off, level 2 only, all.
 - 
 
 Documents/esplayer.txt content: 
@@ -51,6 +51,8 @@ Documents/esplayer.txt content:
 http://mysite1.com/list1.m3u  
 http://mysite2.com/list2.m3u  
 ```
+more info: [android 2](android 2.md)
+
 
 
 **ver**
