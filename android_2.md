@@ -115,6 +115,8 @@ http://192.168.1.10:22/series/series01/name.s01e02.mkv
 #### ext m3u list
 same as http list, just each item also has extinfo tag. unlike sftp and http, they dont auto advance to the next item ,when current item finishes playing. you have to click on button down, or swipe down.
 
+files have to be web server, too.
+
 esplayer.txt:
 
 `http://192.168.1.10/extlist.m3u`
