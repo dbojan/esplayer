@@ -62,6 +62,7 @@ Download apk to install on android
 - support for mkv files, and subs inside them. en/eng language is selected by default
 - support for srt next to file on say sftp local share, if file is opened through for example cx explorer.
 - program also looks for subs in Documents/subs folder if it exists. you can select custom subs using osd (streams menu)
+- visualizer: osciloscope and equilizer for audio only files.
 
 
 | Function | Android | TV remote buttons |
