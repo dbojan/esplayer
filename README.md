@@ -58,6 +58,9 @@ http://mysite1.com/list1.m3u
 http://mysite2.com/list2.m3u  
 ```
 
+### download
+
+To download apk, click on **esplayer_android_apk_xx.apk** at the top of the screen, then on the 'arrow pointing down' to download
 
 **ver**
 
