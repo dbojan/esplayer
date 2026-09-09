@@ -53,6 +53,7 @@ Download apk to install on android
 - support for epg/xml next to m3u file ('local xml'), which can also be gzipped
 - program also looks up on the device for files: Documents/epg/playlistname.xml(gz) and Documents/epg/all.xml(gz) if files exist. usefull for vod channels, with movies description that hardly ever changes.
 - support for tmdb info (put tmdb.key in documents folder. inside just put your api key string, which you can get for free from https://www.themoviedb.org/ )
+- you can look up epg guides on https://iptv-org.github.io/ (enter channel name, look for guide icon on the right, looks like calender)
 
 #### media files
 - browse local files in Documents/media folder using Browse button.
