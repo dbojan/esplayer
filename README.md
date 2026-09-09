@@ -9,8 +9,8 @@ Download apk to install on android
 - put URLS to your playlist in Documents/esplayer.txt, or put m3u files in Documents folder (on android, on desktop put it next to appimage/exe file)
 
 #### features
-- written in kotlin multiplatform + exoplayer (android)
-- support for file/chanel tags, using channellist/osd menu, or remote color buttons (red, green,yellow, blue)
+- written in kotlin multiplatform + exoplayer
+- support for file/channel tagging, buttons on the remote (red, green,yellow, blue), or osd menu
 - custom remote buttons settings more info: [android_2](android_2.md)
 - export import tags and (book)marks from settings screen
 - multiple level for logging: off, level 2 only, all.
@@ -20,25 +20,22 @@ Download apk to install on android
 - supports widevine (lock icon)
 
 #### playlists
-- support for multiple playlists (either in Documents/esplayer.txt, or in documents folder)
-- support m3u(8).gz and xml.gz compression
-- custom play speed, and volume inside app
+- support for multiple playlists (either in Documents/esplayer.txt, or m3u/m3u8(.gz) in documents folder)
+- switch to another list using remote keys (rew/ffwd), or two fingers up down swipe, or lists button in channellist screen, or osd menu
+- support m3u(8).gz compression of play lists
+- custom play speed, and volume levels inside app
 - custom font color and shading for subtitles
+- support for (pluto) subtitles
+- support for recording. recorded files are in Documents/media/recordings. (Use 'Browse' buttons to view them)
+- default recording time is 2 hours. you can change it using osd menu
 
 #### playlist types
-- supports radio channels/audio only files playback with screen off
 - support for http, sftp, extinfo playlists
-- custom auto update time for playlists
-
-#### media files
-- browse local files in Documents/media folder using Browse button.
-- support for audio books: mka: opus codec, cover image, chapters - chapter marks in osd, osd menu/goto, seekbar dots ; opus, mkb, mp3, mp4  formats
-- bookmarks (on pause new bookmark (M in lower left part of screen) is created. To go to previous bookmark, click on m)
-
+- support for radio channels/audio only files playback with screen off
+- custom auto update period for playlists
 
 #### playlist filters
-- playlist filter inside app
-- support for (pluto) subtitles
+- playlist filter inside app (click on filter button in channellist screen)
 - filter url in esplayer.txt, so you can have always fresh favorite list:
   `http://mysite.com/index.html?filtername=one show|another show|third show`
 - available filters for urls in esplayer.txt: sort list: `filtersort=yes`  show just group western: `filtergrouptitle=western`  `filterrandom=yes` (randomize list)
@@ -48,10 +45,15 @@ Download apk to install on android
 - support for epg/xml (#EXTM3U url-tvg="https://example.com"), ('remote xml')
 - support for mulitple epg/xml lists in url-tvg (#EXTM3U url-tvg="https://example.com/epg1.xml,https://example.com/epg2.xml")
 - support for tvg-id: "tvg-id="channel_1.id"
-- support for mutiple ids per one channel: tvg-id="channel_1.id **tvg-id-multi="channel1.id,channel1_another_id"** so you can have mulitple epg urls, each using different id for the same channels. tvg-id is checked first, then tvg-id-multi first id, then second id. checking is stopped for a channel on the first match.
+- support for **mutiple ids per one channel**: tvg-id="channel_1.id" **tvg-id-multi="channel1.id,channel1_another_id"** so you can have mulitple epg urls, each using different id for the same channels. tvg-id is checked first, then tvg-id-multi first id, then second id. checking is stopped for a channel on the first match.
 - support for gzipped xml epg: https://example.com/epg1.xml.gz
 - support for epg/xml next to m3u file ('local xml'), which can also be gzipped
-- support for tmdb info (put tmdb.key in documents folder. inside just put your api key from https://www.themoviedb.org/ )
+- support for tmdb info (put tmdb.key in documents folder. inside just put your api key string, which you can get for free from https://www.themoviedb.org/ )
+
+#### media files
+- browse local files in Documents/media folder using Browse button.
+- support for audio books: mka: opus codec, cover image, chapters - chapter marks in osd, osd menu/goto, seekbar dots; opus, mkb, mp3, mp4  formats
+- bookmarks: on pause new bookmark (M in lower left part of screen) is created. To go to previous bookmark, click on m or M
 
 
 | Function | Android | TV remote buttons |
@@ -62,7 +64,7 @@ Download apk to install on android
 |rewind/fast forward|swipe left/right|arrow left/right|
 |prev/next list|two fingers swipe up/down|rewind/fast forward|
 |osd menu|tap and hold|settings/menu/play/pause|
-|epg|osd menu|txt/epg|
+|epg|osd menu|txt/epg/info|
 |settings screen|osd menu, or through channel list screen|aspect ratio|
 |exit|x icon on player screen|stop|
 |recording | osd menu | rec|
