@@ -4,36 +4,54 @@
 
 Download apk to install on android
 
-**how to use**
+#### how to use
 
 - put URLS to your playlist in Documents/esplayer.txt, or put m3u files in Documents folder (on android, on desktop put it next to appimage/exe file)
 
-### features
+#### features
 - written in kotlin multiplatform + exoplayer (android)
-- supports clearkey (single, multiple keys) encrypted dash streams
-- supports widevine
-- supports radio channels with screen off
-- support for http,sftp,extinfo playlists
-- bookmarks (on pause new bookmark (M in lower left part of screen) is created. To go to previous bookmark, click on m)
-- custom auto update time for list
-- support for epg/xml (#EXTM3U url-tvg="https://example.com"), ('remote xml')
-- support for epg/xml next to m3u file ('local xml')
-- support for tmdb info (put tmdb.key in documents folder. inside just put your api key from https://www.themoviedb.org/ )
-- browse Documents/media folder using Browse button.
-- custom remote buttons settings more info: [android_2](android_2.md)
-- support for (pluto) subtitles
-- custom speed, and volume inside app
-- custom font color and shading for subtitles
-- support m3u(8).gz and xml.gz compression
-- playlist filter inside app
-- filter url in esplayer.txt, so you can have always fresh favorite list:
-  `http://mysite.com/index.html?filtername=one show|another show|third show`
-- more filters for urls in esplayer.txt: sort list: `filtersort=yes`  show just group western: `filtergrouptitle=western`  `filterrandom=yes` (randomize list)
-- you can group filters using ? or & `?filtername=sport|news&filtersort=yes`  or with multiple names `?filtername=sport&filtersort=yes`
-- support for audio books: mka: opus codec, cover image, chapters - chapter marks in osd, osd menu/goto, seekbar dots ; opus, mkb, mp3, mp4  formats
 - support for file/chanel tags, using channellist/osd menu, or remote color buttons (red, green,yellow, blue)
+- custom remote buttons settings more info: [android_2](android_2.md)
 - export import tags and (book)marks from settings screen
 - multiple level for logging: off, level 2 only, all.
+
+#### encryption
+- supports clearkey (single, multiple keys) encrypted dash streams (key icon)
+- supports widevine (lock icon)
+
+#### playlists
+- support for multiple playlists (either in Documents/esplayer.txt, or in documents folder)
+- support m3u(8).gz and xml.gz compression
+- custom play speed, and volume inside app
+- custom font color and shading for subtitles
+
+#### playlist types
+- supports radio channels/audio only files playback with screen off
+- support for http, sftp, extinfo playlists
+- custom auto update time for playlists
+
+#### media files
+- browse local files in Documents/media folder using Browse button.
+- support for audio books: mka: opus codec, cover image, chapters - chapter marks in osd, osd menu/goto, seekbar dots ; opus, mkb, mp3, mp4  formats
+- bookmarks (on pause new bookmark (M in lower left part of screen) is created. To go to previous bookmark, click on m)
+
+
+#### playlist filters
+- playlist filter inside app
+- support for (pluto) subtitles
+- filter url in esplayer.txt, so you can have always fresh favorite list:
+  `http://mysite.com/index.html?filtername=one show|another show|third show`
+- available filters for urls in esplayer.txt: sort list: `filtersort=yes`  show just group western: `filtergrouptitle=western`  `filterrandom=yes` (randomize list)
+- you can group filters using ? or & `?filtername=sport|news&filtersort=yes`  or with multiple names `?filtername=sport&filtersort=yes`
+
+#### EPG
+- support for epg/xml (#EXTM3U url-tvg="https://example.com"), ('remote xml')
+- support for mulitple epg/xml lists in url-tvg (#EXTM3U url-tvg="https://example.com/epg1.xml,https://example.com/epg2.xml")
+- support for tvg-id: "tvg-id="channel_1.id"
+- support for mutiple ids per one channel: tvg-id="channel_1.id **tvg-id-multi="channel1.id,channel1_another_id"** so you can have mulitple epg urls, each using different id for the same channels. tvg-id is checked first, then tvg-id-multi first id, then second id. checking is stopped for a channel on the first match.
+- support for gzipped xml epg: https://example.com/epg1.xml.gz
+- support for epg/xml next to m3u file ('local xml'), which can also be gzipped
+- support for tmdb info (put tmdb.key in documents folder. inside just put your api key from https://www.themoviedb.org/ )
 
 
 | Function | Android | TV remote buttons |
@@ -58,7 +76,7 @@ http://mysite1.com/list1.m3u
 http://mysite2.com/list2.m3u  
 ```
 
-### download
+#### download
 
 To download apk, click on **esplayer_android_apk_xx.apk** at the top of the screen, then on the 'arrow pointing down' to download
 
