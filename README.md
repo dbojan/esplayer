@@ -51,12 +51,16 @@ Download apk to install on android
 - support for **mutiple ids per one channel**: tvg-id="channel_1.id" **tvg-id-multi="channel1.id,channel1_another_id"** so you can have mulitple epg urls, each using different id for the same channels. tvg-id is checked first, then tvg-id-multi first id, then second id. checking is stopped for a channel on the first match.
 - support for gzipped xml epg: https://example.com/epg1.xml.gz
 - support for epg/xml next to m3u file ('local xml'), which can also be gzipped
+- program also looks up on the device for files: Documents/epg/playlistname.xml(gz) and Documents/epg/all.xml(gz) if files exist. usefull for vod channels, with movies description that hardly ever changes.
 - support for tmdb info (put tmdb.key in documents folder. inside just put your api key string, which you can get for free from https://www.themoviedb.org/ )
 
 #### media files
 - browse local files in Documents/media folder using Browse button.
 - support for audio books: mka: opus codec, cover image, chapters - chapter marks in osd, osd menu/goto, seekbar dots; opus, mkb, mp3, mp4  formats
 - bookmarks: on pause new bookmark (M in lower left part of screen) is created. To go to previous bookmark, click on m or M
+- support for mkv files, and subs inside them. en/eng language is selected by default
+- support for srt next to file on say sftp local share, if file is opened through for example cx explorer.
+- program also looks for subs in Documents/subs folder if it exists. you can select custom subs using osd (streams menu)
 
 
 | Function | Android | TV remote buttons |
