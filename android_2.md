@@ -73,24 +73,60 @@ Not remappable: `digit0`-`digit9`.
 
 you can also use exit on other screens, but exit currently works on all screens, so it is considered best choice for global screen.
 
+<hr>
 
-### playlist examples:
+### Playlist examples:
 
-http and sftp list auto advance to the next item, when current file ends
+note: http and sftp list auto advance to the next item, when current file ends
+
+you can use various file types: mp4, mkv, flv...
+
+Mkv subtitle will be auto played.
+
+For external subtitles, best is to put them in Documents/subs and name them as file, or open file from cx explorer on remote share.
+
+#### sftp
+
 sftp (recommended for local shares only, useful if you already have sftp server.)
+
 esplayer.txt:
-sftp://b:b@192.168.1.1:22/sftp/media/sftplist.m3u
+
+`sftp://user:pass@192.168.1.10:22/sftp/media/sftplist.m3u`
 
 sftplist.m3u create using bash/batch script:
-sftp://b:b@192.168.1.1:22/sftp/media/series/series01/name.s01e01.mkv
-sftp://b:b@192.168.1.1:22/sftp/media/series/series01/name.s01e02.mkv
+```
+sftp://user:pass@192.168.1.10:22/sftp/media/series/series01/name.s01e01.mkv
+sftp://user:pass@192.168.1.10:22/sftp/media/series/series01/name.s01e02.mkv
+```
 
-http
+#### http
+files have to be web server (like nginx, start it as sudo nginx, and server on port 80, another port like http://192.168.1.10:8081 should probably work too)
 
+esplayer.txt:
 
+`http://192.168.1.10/httplist.m3u`
 
+httplist.m3u:
+```
+http://192.168.1.10:22/series/series01/name.s01e01.mkv
+http://192.168.1.10:22/series/series01/name.s01e02.mkv
+```
 
+#### ext m3u list
+same as http list, just each item also has extinfo tag. unlike sftp and http, they dont auto advance to the next item ,when current item finishes playing. you have to click on button down, or swipe down.
 
+esplayer.txt:
+
+`http://192.168.1.10/extlist.m3u`
+
+extlist.m3u:
+```
+#EXTM3U
+#EXTINF:-1,name.s01e01.mkv
+http://192.168.1.10:22/series/series01/name.s01e01.mkv
+#EXTINF:-1,name.s01e02.mkv
+http://192.168.1.10:22/series/series01/name.s01e02.mkv
+```
 
 
 
