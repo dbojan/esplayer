@@ -33,7 +33,7 @@ Download apk to install on android
 - program does not come with iptv playlists. on the internet you can find: Collection of publicly available IPTV channels
 
 #### playlist types
-- support for http, sftp, extinfo playlists
+- support for http, sftp, extinfo playlists, more info: [android_2](android_2.md)
 - support for radio channels/audio only files playback with screen off
 - custom auto update period for playlists
 
