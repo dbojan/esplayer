@@ -11,7 +11,7 @@ Download apk to install on android
 #### features
 - written in kotlin multiplatform + exoplayer
 - support for file/channel tagging, buttons on the remote (red, green,yellow, blue), or osd menu
-- custom remote buttons settings more info: [android_2](android_2.md)
+- custom remote buttons settings [more info](android_2.md)
 - export import tags and (book)marks from settings screen
 - multiple level for logging: off, level 2 only, all.
 - restart last played channel on restart
@@ -33,7 +33,7 @@ Download apk to install on android
 - program does not come with iptv playlists. on the internet you can find: Collection of publicly available IPTV channels
 
 #### playlist types
-- support for http, sftp, extinfo playlists, more info: [android_2](android_2.md)
+- support for http, sftp, extinfo playlists, [more info](android_2.md#playlist-examples)
 - support for radio channels/audio only files playback with screen off
 - custom auto update period for playlists
 
