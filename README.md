@@ -14,6 +14,8 @@ Download apk to install on android
 - custom remote buttons settings more info: [android_2](android_2.md)
 - export import tags and (book)marks from settings screen
 - multiple level for logging: off, level 2 only, all.
+- restart last played channel on restart
+- support for http headers: referrer, user agent, origin
 
 #### encryption
 - supports clearkey (single, multiple keys) encrypted dash streams (key icon)
@@ -28,6 +30,7 @@ Download apk to install on android
 - support for (pluto) subtitles
 - support for recording. recorded files are in Documents/media/recordings. (Use 'Browse' buttons to view them)
 - default recording time is 2 hours. you can change it using osd menu
+- program does not come with iptv playlists. on the internet you can find: Collection of publicly available IPTV channels
 
 #### playlist types
 - support for http, sftp, extinfo playlists
@@ -39,7 +42,7 @@ Download apk to install on android
 - filter url in esplayer.txt, so you can have always fresh favorite list:
   `http://mysite.com/index.html?filtername=one show|another show|third show`
 - available filters for urls in esplayer.txt: sort list: `filtersort=yes`  show just group western: `filtergrouptitle=western`  `filterrandom=yes` (randomize list)
-- you can group filters using ? or & `?filtername=sport|news&filtersort=yes`  or with multiple names `?filtername=sport&filtersort=yes`
+- you can group filters using ? or & `http://mysite.com/index.m3u?filtername=sport|news&filtersort=yes`  or with multiple names `?filtername=sport&filtersort=yes`
 
 #### EPG
 - support for epg/xml (#EXTM3U url-tvg="https://example.com"), ('remote xml')
@@ -58,7 +61,7 @@ Download apk to install on android
 
 | Function | Android | TV remote buttons |
 |:--------|:------:|:------:|
-|pause|screen tap|ok|
+|pause|screen tap|ok/space (\|_\|)|
 |prev/next channel|swipe up/down|up/down, or channel up/down|
 |channel list screen|double tap or clipboard icon on player screen| 'back' on player screen|
 |rewind/fast forward|swipe left/right|arrow left/right|
