@@ -130,6 +130,52 @@ http://192.168.1.10:22/series/series01/name.s01e01.mkv
 http://192.168.1.10:22/series/series01/name.s01e02.mkv
 ```
 
+<hr>
+
+### Examples of m3u files syntax with clearkey and widevine:  
+
+from issues posted to various media players dev pages here: https://github.com/dbojan/encrypted-stream-test/
+
+#### clearkey 1 key
+
+```
+#EXTINF:-1 tvg-logo="", name1
+#EXTVLCOPT:http-user-agent=Android
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=a18b6aa739be4c0b114605fcfb5d6b68:b41c3a6f7511b2e3a828d9580124c89d
+https://.../index.mpd
+```
+
+#### clearkey multple keys, 3 or 5 keys:  
+
+```
+#EXTINF:-1 tvg-logo="", name2
+#EXTVLCOPT:http-user-agent=Android
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={15965a6dbafd12c4af6aca127b271d5b:23dd40b93306de23ec667fb17a61f322,3decf356cc9351019fb1b627b089446d:4f7e516d3253d964e55b5c36f7f65d4a,511e929c12e0596bab59b11452de49a8:6f17d11eb6e069f4165bf48b425f9ea3}
+https://.../index.mpd
+```
+
+
+#### widevine:
+
+```
+#EXTINF:-1 ,name3
+#EXTVLCOPT:http-user-agent=Android
+#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
+#KODIPROP:inputstream.adaptive.license_key=https://....?drm-type=widevine
+https://something....
+```
+
+Numbers are changed obviously
+
+
+
+
 
 
 
