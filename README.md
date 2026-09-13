@@ -2,7 +2,7 @@
 
 2026-09-13-17-53-39
 
-Download apk to install on android
+Download apk to install on android (click on **esplayer_android_apk_xx.apk** at the top of the screen, then on the 'arrow pointing down' to download)
 
 #### how to use
 
@@ -87,10 +87,6 @@ http://mysite1.com/list1.m3u
 http://mysite2.com/list2.m3u  
 ```
 
-#### download
-
-To download apk, click on **esplayer_android_apk_xx.apk** at the top of the screen, then on the 'arrow pointing down' to download
-
 **ver**
 
 2026-09-13-17-53-39
@@ -121,7 +117,6 @@ To download apk, click on **esplayer_android_apk_xx.apk** at the top of the scre
 [linux and windows app on google drive](https://drive.google.com/drive/folders/1g1VQJJlJ9GU8jronRg7ZgBzxREPsxAU-?usp=sharing)
 
 - uses electron (unfortunately) + shaka player
-- source code is in esplayer_desktop folder, here in github page.
 - switch channels: use scroll wheel or key up/down, page up/down
 - supported clearkey, widevine (although if channels require l1 hardware level, probably wont work)
 - supported: epg, subtitles (pluto).
