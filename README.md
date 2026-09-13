@@ -22,7 +22,7 @@ Download apk to install on android (click on **esplayer_android_apk_xx.apk** at 
 - supports widevine (lock icon)
 
 #### playlists
-- support for multiple playlists (either in Documents/esplayer.txt, or m3u/m3u8(.gz) in documents folder)
+- support for multiple playlists (either in Documents/esplayer.txt, or m3u/m3u8(.gz) in Documents folder)
 - switch to another list using remote keys (rew/ffwd), or two fingers up down swipe, or lists button in channellist screen, or osd menu
 - support m3u(8).gz compression of play lists
 - custom play speed, and volume levels inside app
