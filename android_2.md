@@ -140,9 +140,15 @@ More info here: https://github.com/sharkiller/Reproductor-MPD-M3U8/wiki/M3U-form
 
 #### clearkey 1 key
 
+user agent, referrer and origin are sometimes required, which can be inspected by dev tools/network/*.m3u in firefox/chrome. sometimes they require / at the end (after .com), sometimes they do not.
+
+another way is to use kodi prop for same headers (agent, ref., origin)
+
 ```
 #EXTINF:-1 tvg-logo="", name1
 #EXTVLCOPT:http-user-agent=Android
+#EXTVLCOPT:http-referrer=https://www.somesite.com/
+#EXTVLCOPT:http-origin=https://www.somesite.com
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
