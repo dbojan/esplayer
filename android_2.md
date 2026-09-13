@@ -134,7 +134,7 @@ http://192.168.1.10:22/series/series01/name.s01e02.mkv
 
 ### Examples of m3u files syntax with clearkey and widevine:  
 
-from issues posted to various media players dev pages here: https://github.com/dbojan/encrypted-stream-test
+From issues posted to various media players dev pages here: https://github.com/dbojan/encrypted-stream-test
 
 More info here: https://github.com/sharkiller/Reproductor-MPD-M3U8/wiki/M3U-format
 
