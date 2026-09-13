@@ -48,7 +48,7 @@ Download apk to install on android (click on **esplayer_android_apk_xx.apk** at 
 - support for epg/xml (#EXTM3U url-tvg="https://example.com"), ('remote xml')
 - support for mulitple epg/xml lists in url-tvg (#EXTM3U url-tvg="https://example.com/epg1.xml,https://example.com/epg2.xml")
 - support for tvg-id: "tvg-id="channel_1.id"
-- support for **mutiple ids per one channel**: tvg-id="channel_1.id" **tvg-id-multi="channel1.id,channel1_another_id"** so you can have mulitple epg urls, each using different id for the same channels. tvg-id is checked first, then tvg-id-multi first id, then second id. checking is stopped for a channel on the first match.
+- support for **mutiple ids per one channel**: tvg-id="channel1.id" **tvg-id-multi="channel1_another.id,channel1_some_other_id"** so you can have mulitple epg urls, each using different id for the same channels. tvg-id is checked first, then tvg-id-multi first id, then second id. checking is stopped for a channel on the first match.
 - support for gzipped xml epg: https://example.com/epg1.xml.gz
 - support for epg/xml next to m3u file ('local xml'), which can also be gzipped
 - program also looks up on the device for files: Documents/epg/playlistname.xml(gz) and Documents/epg/all.xml(gz) if files exist. usefull for vod channels, with movies description that hardly ever changes.
