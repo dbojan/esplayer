@@ -1,6 +1,6 @@
 # Esplayer android - open source IPTV player with support for encrypted streams
 
-2026-09-07-08-42-53
+2026-09-13-17-53-39
 
 Download apk to install on android
 
@@ -92,6 +92,11 @@ http://mysite2.com/list2.m3u
 To download apk, click on **esplayer_android_apk_xx.apk** at the top of the screen, then on the 'arrow pointing down' to download
 
 **ver**
+
+2026-09-13-17-53-39
+- fix filtered list name length on save, max 150 + date etc. Max is 250 btw
+- fix save filtered list tags: epg url saved, other tags and kodi and vlc opts. note: saved filtered list will always use 'url-tvg=' for ext epg url tag name.
+- renamed some internal variables
 
 2026-09-07-08-42-53
 - fixes and new features
