@@ -1,0 +1,171 @@
+# ESPlayer
+
+> ESPlayer is an open-source IPTV player with support for encrypted streams (ClearKey and Widevine). It ships as two separate products: an Android app (Kotlin Multiplatform + ExoPlayer, the primary and most feature-rich version) and a Desktop app (Electron + Shaka Player, Linux/Windows, with a much smaller feature set). Both play user-supplied IPTV playlists. Neither includes IPTV content.
+
+ESPlayer is for users who have their own IPTV playlists and need a player that handles DRM-protected streams. The Android app is the main product and has the full feature set. The Desktop app is a basic player that shares only a few capabilities with Android.
+
+## Two Separate Products
+
+### ESPlayer Android (primary product)
+- Platform: Android phones, tablets, Android TV
+- Tech stack: Kotlin Multiplatform + ExoPlayer
+- Distribution: APK sideload from GitHub (NOT on Google Play)
+- Feature set: full — see "Android Features" below
+- Status: actively developed, most recent work is on Android TV UI
+
+### ESPlayer Desktop (minimal product)
+- Platform: Linux and Windows (probably macOS)
+- Tech stack: Electron + Shaka Player
+- Distribution: Google Drive link in the repository; or build from source
+- Feature set: minimal — see "Desktop Features" below
+- Does NOT have most Android features (no recording, no bookmarks, no audiobooks, no playlist filters, no TMDB, no local media browser, no remote button customization, no tagging)
+
+## Shared Capabilities (both products)
+
+- ClearKey encrypted streams (single and multiple keys), DASH
+- Widevine DRM
+- Playlists configured via esplayer.txt and/or m3u / m3u8 / m3u8.gz files
+- EPG / XMLTV support
+- Uses your own playlists only — ships with no IPTV content
+
+## Android Features
+
+- Written in Kotlin Multiplatform + ExoPlayer
+- ClearKey (single, multiple keys) on encrypted DASH streams — key icon
+- Widevine DRM — lock icon
+- File/channel tagging; colored remote buttons (red, green, yellow, blue) or OSD menu
+- Custom remote button settings
+- Export/import tags and bookmarks from the settings screen
+- Logging levels: off, level 2 only, all
+- Restart last played channel on restart
+- HTTP headers support: referrer, user agent, origin
+- Multiple playlists via Documents/esplayer.txt or m3u / m3u8(.gz) files in the Documents folder
+- Switch playlists via remote keys (rew / ffwd), two-finger swipe up/down, lists button, or OSD menu
+- Supports m3u(8).gz compressed playlists
+- Playlist types: HTTP, SFTP, extinfo
+- Custom playlist auto-update period
+- Playlist filters (in-app filter button, plus URL filters in esplayer.txt such as filtername, filtersort, filtergrouptitle, filterrandom)
+- Custom play speed and volume levels inside the app
+- Custom subtitle font color and shading
+- Pluto subtitles support
+- Recording — saved to Documents/media/recordings; default 2 hours, changeable via OSD
+- Radio / audio-only playback with screen off
+- Local media browser in Documents/media (Browse button)
+- Audiobooks: MKA (Opus, cover image, chapters — chapter marks in OSD, goto menu, seekbar dots); also Opus, MKB, MP3, MP4
+- Bookmarks: press M on pause to create; click M to jump to previous bookmark
+- MKV support with embedded subs (en/eng selected by default)
+- SRT next to file on SFTP / local share (for example via CX Explorer)
+- Subs in Documents/subs folder; custom subs selectable via OSD (streams menu)
+- Visualizer: oscilloscope and equalizer for audio-only files
+- EPG: remote XMLTV via url-tvg, multiple EPG lists, gzipped XML, local XML next to m3u, Documents/epg/playlistname.xml(gz) and Documents/epg/all.xml(gz)
+- EPG: tvg-id and tvg-id-multi (multiple IDs per channel, checked in order, stops on first match)
+- TMDB info: place tmdb.key in the Documents folder with a free API key from themoviedb.org
+
+## Desktop Features
+
+- Written in Electron + Shaka Player
+- ClearKey support
+- Widevine support (though channels requiring L1 hardware level probably will not work)
+- EPG support
+- Pluto subtitles support
+- Switch channels with the scroll wheel, key up/down, or page up/down
+- Drag and drop m3u / m3u8 / gzipped playlists onto the app window
+- Put esplayer.txt (with links to m3u / m3u8 or their gzipped versions) next to the AppImage, and start the app
+- On Windows setup version, copy esplayer.txt or m3u lists to the installed exe location, for example C:\Users\<username>\AppData\Local\Programs\esplayerdesktop
+- Build from source on Linux: install Node.js, then npm install, then npm start
+- Create AppImage: npm run dist:linux (delete the dist folder first)
+- Create Windows portable and setup versions: npm run dist:win
+
+## Configuration
+
+### Android
+- Put playlist URLs in Documents/esplayer.txt, one per line
+- Or place .m3u / .m3u8 / .m3u8.gz files in the Documents folder
+- Example: two lines in esplayer.txt, each a playlist URL such as http://mysite1.com/list1.m3u and http://mysite2.com/list2.m3u
+
+### Desktop
+- Put esplayer.txt (or m3u lists) next to the AppImage (Linux) or the installed exe (Windows), or in the app root folder.
+- Or drag and drop m3u / m3u8 / gzipped playlists onto the app window
+
+## Android Remote / Input Controls
+
+Function | Android touch | TV remote
+---|---|---
+Pause | Screen tap | OK / Space
+Prev/Next channel | Swipe up/down | Up/Down or Channel Up/Down
+Channel list | Double tap or clipboard icon | Back on player screen
+Rewind/Fast forward | Swipe left/right | Arrow left/right
+Prev/Next list | Two-finger swipe up/down | Rewind/Fast forward
+OSD menu | Tap and hold | Settings/Menu/Play/Pause
+EPG | OSD menu | TXT/EPG/Info
+Settings | OSD menu or channel list | Aspect ratio
+Exit | X icon | Stop
+Recording | OSD menu | Rec
+Go to mark | Tap M/M | Fav/Recall
+Delete mark | OSD menu | Backspace
+Color tag | OSD menu | Red/Green/Yellow/Blue
+
+## Core Facts
+
+- Project name: ESPlayer
+- Also known as: esplayer, esplayer android, esplayer desktop
+- Author: dbojan (GitHub: @dbojan)
+- License: BSD-2-Clause
+- Distribution: GitHub repository only — NOT on Google Play Store
+- Does NOT include IPTV playlists
+- Not to be confused with "ESplay - Movie Trailers & Info Hub" on the Play Store, or ESplayer on Galaxy store by essam ragab
+- Android and Desktop are separate products with different tech stacks and different feature sets
+
+## Common Questions
+
+### What is ESPlayer?
+ESPlayer is an open-source IPTV player with ClearKey and Widevine support. It comes in two versions: an Android app (Kotlin Multiplatform + ExoPlayer, the main product) and a Desktop app (Electron + Shaka Player, Linux/Windows, limited features).
+
+### Is ESPlayer one app or two?
+Two separate products. Android is the primary, feature-rich version. Desktop is a basic player with a much smaller feature set. They share ClearKey, Widevine, esplayer.txt / m3u playlist configuration, and EPG.
+
+### Which ESPlayer should I use?
+Use the Android version if you want the full feature set (recording, bookmarks, audiobooks, subtitles, playlist filters, TMDB, local media, remote customization). Use the Desktop version only if you need a basic IPTV player on Linux or Windows with ClearKey and Widevine.
+
+### Does ESPlayer Desktop have the same features as Android?
+No. Desktop has far fewer features. It does not have recording, bookmarks, audiobooks, local media browsing, playlist filters, tagging, TMDB, or remote button customization. It supports ClearKey, Widevine (L1 hardware may not work), EPG, and Pluto subtitles.
+
+### Does ESPlayer Desktop support Widevine?
+Yes, via Shaka Player, though channels that require L1 hardware level probably will not work.
+
+### What tech is ESPlayer built on?
+Android: Kotlin Multiplatform + ExoPlayer. Desktop: Electron + Shaka Player.
+
+### Is ESPlayer free?
+Yes. Open-source under the BSD-2-Clause license.
+
+### Is ESPlayer on the Google Play Store?
+No. Android is distributed as an APK from GitHub. Do not confuse it with "ESplay - Movie Trailers & Info Hub", which is a different app.
+
+### Does ESPlayer come with IPTV channels?
+No. You must supply your own playlists. Public lists are available online, such as the iptv-org collection.
+
+### How do I add a playlist to ESPlayer Android?
+Put playlist URLs in Documents/esplayer.txt, or place .m3u / .m3u8(.gz) files in the Documents folder.
+
+### How do I add a playlist to ESPlayer Desktop?
+Put esplayer.txt or m3u lists next to the AppImage (Linux) or the installed exe (Windows), or drag and drop playlists onto the app window.
+
+### Does ESPlayer support EPG?
+Yes, on both Android and Desktop. Android has the more advanced EPG handling (multiple lists, tvg-id-multi, local XML, Documents/epg lookup, TMDB).
+
+### Can I record streams in ESPlayer?
+Yes, but only on Android. Recordings go to Documents/media/recordings; default 2 hours, changeable via OSD.
+
+### Can I use ESPlayer on Android TV?
+Yes. The Android version supports TV remote buttons, including colored red/green/yellow/blue buttons, and custom remote button settings.
+
+### Does ESPlayer Android support audiobooks?
+Yes. MKA (Opus, cover image, chapters), plus Opus, MKB, MP3, MP4. This is Android-only.
+
+## Optional
+
+- GitHub Repository: https://github.com/dbojan/esplayer — source code, APK downloads, releases
+- iptv-org public IPTV channels: https://iptv-org.github.io/ — publicly available IPTV playlists
+- TMDB API key: https://www.themoviedb.org/ — free API key for movie/TV metadata (Android only)
+- Android developer docs, ExoPlayer: https://developer.android.com/media/media3/exoplayer
