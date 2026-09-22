@@ -1,6 +1,6 @@
 # Esplayer android - open source IPTV player with support for encrypted streams
 
-2026-09-13-17-53-39
+2026-09-20-19-33-59
 
 Download apk to install on android (click on **esplayer_android_apk_xx.apk** at the top of the screen, then on the 'arrow pointing down' to download)
 
@@ -87,7 +87,10 @@ http://mysite1.com/list1.m3u
 http://mysite2.com/list2.m3u  
 ```
 
-**ver**
+#### changes
+
+2026-09-20-19-33-59
+- fix epg for vod, it does not have to be 'current' if it is just one title per channel
 
 2026-09-13-17-53-39
 - fix filtered list name length on save, max 150 + date etc. Max is 250 btw
@@ -114,14 +117,14 @@ http://mysite2.com/list2.m3u
 
 This is basic IPTV player with suport for clearkey and widevine for desktop (linux and windows, and probably mac)
 
-2026-09-07-08-42-53
+2026-09-20-20-51-32
 
 [linux and windows app on google drive](https://drive.google.com/drive/folders/1g1VQJJlJ9GU8jronRg7ZgBzxREPsxAU-?usp=sharing)
 
 - uses electron (unfortunately) + shaka player
 - switch channels: use scroll wheel or key up/down, page up/down
 - supported clearkey, widevine (although if channels require l1 hardware level, probably wont work)
-- supported: epg, subtitles (pluto).
+- supported: epg, tdmb (put tmdb.key with your key inside to Documents, or next to the player), subtitles (pluto).
 - put esplayer.txt with links to .m3u/.m3u8, or their gzipped version next to appimage, and start app
 - if you use windows 'setup version' copy esplayer.txt or m3u lists to installed .exe file location, probably something like `C:\Users\<username>\AppData\Local\Programs\esplayerdesktop` folder
 - you can also drag and drop m3u/m3u/gzipped version on the app window.
@@ -144,4 +147,14 @@ on windows, to create portable and setup version of app, use:
 npm run dist:win
 ```
 
+#### changes 
+
+2026-09-20-20-51-32
+- fix for epg (xml/xml.gz) next to dropped/command line argument m3u files.
+- fix for vod with expired dates
+- added default stream en,eng (with two seconds delay for subtitle check and switch)
+- fixed scroll to change channel, so it only works over video/fullscreen part. otherwise it scrolls channellist/log
+- switched to https://github.com/castlabs/electron-releases which supports widevine. sintelel widevine test works, but channels requiring hardware level (l1 widevine) might not work.
+- run  npm approve-scripts electron, then npm install if npm coplains about new electron. and then npm run
+- icons for clearkey/widevine.
   
