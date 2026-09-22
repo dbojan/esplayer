@@ -119,7 +119,7 @@ This is basic IPTV player with suport for clearkey and widevine for desktop (lin
 
 2026-09-20-20-51-32
 
-[linux and windows app on google drive](https://drive.google.com/drive/folders/1g1VQJJlJ9GU8jronRg7ZgBzxREPsxAU-?usp=sharing)
+[linux and windows apps in their folders on google drive](https://drive.google.com/drive/folders/1g1VQJJlJ9GU8jronRg7ZgBzxREPsxAU-?usp=sharing)
 
 - uses electron (unfortunately) + shaka player
 - switch channels: use scroll wheel or key up/down, page up/down
