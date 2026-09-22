@@ -131,14 +131,18 @@ This is basic IPTV player with suport for clearkey and widevine for desktop (lin
 
 - you can use appimage on linux or compile/run from source:
 
-- to install from source:
-install nodejs, then:
+- to install from source, first install nodejs
+- then to install needed packages for the app:
 ```
 npm install
+```
+
+- to run:
+```
 npm start
 ```
 
-to create appimage yourself (delete dist folder first):
+to create appimage yourself (delete appimage/binary from dist folder first):
 ```
 npm run dist:linux
 ```
