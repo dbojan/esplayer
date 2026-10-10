@@ -147,11 +147,11 @@ npm install
 npm start
 ```
 
-to create appimage yourself (delete appimage/binary from dist folder first):
+- to create appimage yourself (delete appimage/binary from dist folder first):
 ```
 npm run dist:linux
 ```
-on windows, to create portable and setup version of app, use:
+- on windows, to create portable and setup version of app, use:
 ```
 npm run dist:win
 ```
