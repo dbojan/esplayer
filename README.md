@@ -1,6 +1,6 @@
 # Esplayer android - open source IPTV player with support for encrypted streams
 
-2026-09-20-19-33-59
+2026-10-10-17-30-35
 
 Download apk to install on android (click on **esplayer_xx.apk** at the top of the screen, then on the 'arrow pointing down' to download)
 
@@ -22,7 +22,7 @@ Download apk to install on android (click on **esplayer_xx.apk** at the top of t
 - supports widevine (lock icon)
 
 #### playlists
-- support for multiple playlists (either in Documents/esplayer.txt, or m3u/m3u8(.gz) in Documents folder)
+- support for **multiple playlists** (either in **Documents/esplayer.txt**, or m3u/m3u8(.gz) in Documents folder)
 - switch to another list using remote keys (rew/ffwd), or two fingers up down swipe, or lists button in channellist screen, or osd menu
 - support m3u(8).gz compression of play lists
 - custom play speed, and volume levels inside app
@@ -35,11 +35,11 @@ Download apk to install on android (click on **esplayer_xx.apk** at the top of t
 #### playlist types
 - support for http, sftp, extinfo playlists, [more info](android_2.md#playlist-examples)
 - support for radio channels/audio only files playback with screen off
-- custom auto update period for playlists
+- **custom auto update period for playlists**, for example one hour, two hours, or one day.
 
 #### playlist filters
 - playlist filter inside app (click on filter button in channellist screen)
-- filter url in esplayer.txt, so you can have always fresh favorite list:
+- **filter url** in esplayer.txt, so you can have always fresh favorite list:
   `http://mysite.com/index.html?filtername=one show|another show|third show`
 - available filters for urls in esplayer.txt: sort list: `filtersort=yes`  show just group western: `filtergrouptitle=western`  `filterrandom=yes` (randomize list)
 - you can group filters using ? or & `http://mysite.com/index.m3u?filtername=sport|news&filtersort=yes`  or with multiple names `?filtername=sport&filtersort=yes`
@@ -88,6 +88,9 @@ http://mysite2.com/list2.m3u
 ```
 
 #### changes
+
+2026-10-10-17-30-35
+- added leanback launcher for tvs like sony bravia.
 
 2026-09-20-19-33-59
 - fix epg for vod, it does not have to be 'current' if it is just one title per channel
