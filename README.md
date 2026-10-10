@@ -2,7 +2,7 @@
 
 2026-10-10-17-30-35
 
-#### Download 
+#### download 
 
 Download apk to install on android (click on **esplayer_xx.apk** at the top of the screen, then on the 'arrow pointing down' to download)
 
