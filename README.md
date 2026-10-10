@@ -4,7 +4,7 @@
 
 #### download 
 
-Download apk to install on android (click on **esplayer_xx_latest.apk** at the top of the screen, then on the 'arrow pointing down' to download)
+- download apk to install on android (click on **esplayer_xx_latest.apk** at the top of the screen, then on the 'arrow pointing down' to download)
 
 #### how to use
 
