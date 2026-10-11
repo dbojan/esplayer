@@ -1,6 +1,6 @@
 # Esplayer android - open source IPTV player with support for encrypted streams
 
-2026-10-10-17-30-35
+2026-10-11-09-51-00
 
 #### download 
 
@@ -90,6 +90,9 @@ http://mysite2.com/list2.m3u
 ```
 
 #### changes
+
+2026-10-11-09-51-00
+- fixed stale epg show
 
 2026-10-10-17-30-35
 - added leanback launcher for tvs like sony bravia.
