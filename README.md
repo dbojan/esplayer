@@ -161,6 +161,8 @@ npm run dist:win
 
 #### changes 
 
+todo: upload 2026-10-11-09-51-00 version on 11th Oct.
+
 2026-09-20-20-51-32
 - fix for epg (xml/xml.gz) next to dropped/command line argument m3u files.
 - fix for vod with expired dates
