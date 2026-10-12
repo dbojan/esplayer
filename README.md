@@ -125,7 +125,7 @@ http://mysite2.com/list2.m3u
 
 This is basic IPTV player with suport for clearkey and widevine for desktop (linux and windows, and probably mac)
 
-2026-09-20-20-51-32
+2026-10-12-15-20-36
 
 [linux and windows apps in their folders on google drive](https://drive.google.com/drive/folders/1g1VQJJlJ9GU8jronRg7ZgBzxREPsxAU-?usp=sharing)
 
@@ -161,7 +161,11 @@ npm run dist:win
 
 #### changes 
 
-todo: upload 2026-10-11-09-51-00 version on 11th Oct.
+2026-10-12-15-20-36
+- fixed stale epg show
+- esplayer, m3u/8/gz, epg fixed lookup in Documents folder
+- editable combo box for URL address or playlist
+- change combo box text, added 'Enter playlist/stream URL here and press Enter'
 
 2026-09-20-20-51-32
 - fix for epg (xml/xml.gz) next to dropped/command line argument m3u files.
