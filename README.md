@@ -1,4 +1,4 @@
-# Esplayer android - open source IPTV player with support for encrypted streams
+# ESplayer android - open source IPTV player with support for encrypted streams
 
 2026-10-11-09-51-00
 
@@ -121,7 +121,7 @@ http://mysite2.com/list2.m3u
 
 <hr>
 
-# Esplayer desktop - open source IPTV player with support for encrypted streams
+# ESplayer desktop - open source IPTV player with support for encrypted streams
 
 This is basic IPTV player with suport for clearkey and widevine for desktop (linux and windows, and probably mac)
 
