@@ -95,7 +95,7 @@ http://mysite2.com/list2.m3u
 
 This is basic IPTV player with suport for clearkey and widevine for desktop (linux and windows, and probably mac)
 
-2026-10-12-16-05-57
+2026-11-15-17-53-03
 
 [linux and windows apps in their folders on google drive](https://drive.google.com/drive/folders/1g1VQJJlJ9GU8jronRg7ZgBzxREPsxAU-?usp=sharing)
 
@@ -165,6 +165,14 @@ npm run dist:win
 
 
 ### Desktop
+
+2026-11-15-17-53-03
+- open last played channel, else first channel, in last used playlist
+- subtitle background 'line bars' is default
+- fixed subtitle position, and background rendering
+- removed unneeded files from scripts folder
+- new app icon, copied from esplayer android
+
 2026-10-12-16-05-57
 - added info about sftp not being supported on desktop
 
