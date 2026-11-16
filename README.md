@@ -89,36 +89,6 @@ http://mysite1.com/list1.m3u
 http://mysite2.com/list2.m3u  
 ```
 
-#### changes
-
-2026-10-11-09-51-00
-- fixed stale epg show
-
-2026-10-10-17-30-35
-- added leanback launcher for tvs like sony bravia.
-
-2026-09-20-19-33-59
-- fix epg for vod, it does not have to be 'current' if it is just one title per channel
-
-2026-09-13-17-53-39
-- fix filtered list name length on save, max 150 + date etc. Max is 250 btw
-- fix save filtered list tags: epg url saved, other tags and kodi and vlc opts. note: saved filtered list will always use 'url-tvg=' for ext epg url tag name.
-- renamed some internal variables
-
-2026-09-07-08-42-53
-- fixes and new features
-
-2026-03-28-1
-- working on improving android tv ui.
-
-2026-03-22-1  
-- added support for subtitles
-- more settings
-- remote support (to test)
-
-2026-03-17-1
-- first version
-
 <hr>
 
 # Esplayer desktop - open source IPTV player with support for encrypted streams
@@ -159,8 +129,40 @@ npm run dist:linux
 npm run dist:win
 ```
 
-#### changes 
+### changes 
 
+### Android
+
+2026-10-11-09-51-00
+- fixed stale epg show
+
+2026-10-10-17-30-35
+- added leanback launcher for tvs like sony bravia.
+
+2026-09-20-19-33-59
+- fix epg for vod, it does not have to be 'current' if it is just one title per channel
+
+2026-09-13-17-53-39
+- fix filtered list name length on save, max 150 + date etc. Max is 250 btw
+- fix save filtered list tags: epg url saved, other tags and kodi and vlc opts. note: saved filtered list will always use 'url-tvg=' for ext epg url tag name.
+- renamed some internal variables
+
+2026-09-07-08-42-53
+- fixes and new features
+
+2026-03-28-1
+- working on improving android tv ui.
+
+2026-03-22-1  
+- added support for subtitles
+- more settings
+- remote support (to test)
+
+2026-03-17-1
+- first version
+
+
+### Desktop
 2026-10-12-16-05-57
 - added info about sftp not being supported on desktop
 
