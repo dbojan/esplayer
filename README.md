@@ -129,6 +129,8 @@ npm run dist:linux
 npm run dist:win
 ```
 
+<hr>
+
 ### changes 
 
 ### Android
