@@ -144,7 +144,7 @@ npm run dist:win
 
 ### changes 
 
-### Android
+#### Android
 
 2026-10-30-22-35-48
 - added current time to osd (configurable in settings, default on)
@@ -184,7 +184,7 @@ npm run dist:win
 - first version
 
 
-### Desktop
+#### Desktop
 
 2026-11-15-17-53-03
 - open last played channel, else first channel, in last used playlist
