@@ -1,6 +1,6 @@
 # Esplayer android - open source IPTV player with support for encrypted streams
 
-2026-10-11-09-51-00
+2026-10-30-22-35-48
 
 #### download 
 
@@ -86,8 +86,19 @@
 Documents/esplayer.txt content example: 
 ```
 http://mysite1.com/list1.m3u  
-http://mysite2.com/list2.m3u  
+http://mysite2.com/list2.m3u
 ```
+
+
+#### FAQ
+
+q: playing video from shared folder, accesed through cx explorer stops afer 2 minutes  
+a: make sure cx explorer's battery settings is not optimized-restricted, but instead optimized-unrestricted, 
+
+q: on my phone I have no sound on some video files:  
+a: some phones do not have some audio codecs available in exo player, such as ac3 sound codec. use another player for shared video files, such as mpv, vlc, on cx explorer video player  
+
+
 
 <hr>
 
@@ -134,6 +145,15 @@ npm run dist:win
 ### changes 
 
 ### Android
+
+2026-10-30-22-35-48
+- added current time to osd (configurable in settings, default on)
+- epg one liner now stays on, when stream is paused, while epg one liner is displayed
+- change format of the one line osd to: 20:00 curent item (78%), 22:00: next item
+- pause stream when phone call arrives (mobile, viber, whatsapp)
+- fixed subtitle accentuation rendering.
+- bars subtitle background is default
+
 
 2026-10-11-09-51-00
 - fixed stale epg show
