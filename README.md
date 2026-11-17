@@ -1,6 +1,6 @@
 # Esplayer android - open source IPTV player with support for encrypted streams
 
-2026-10-30-22-35-48
+2026-11-03-13-34-24
 
 #### download 
 
@@ -146,7 +146,7 @@ npm run dist:win
 
 #### Android
 
-2026-10-30-22-35-48
+2026-11-03-13-34-24
 - added current time to osd (configurable in settings, default on)
 - epg one liner now stays on, when stream is paused, while epg one liner is displayed
 - change format of the one line osd to: 20:00 curent item (78%), 22:00: next item
