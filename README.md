@@ -95,7 +95,7 @@ http://mysite2.com/list2.m3u
 q: playing video from shared folder, accesed through cx explorer stops afer 2 minutes  
 a: make sure cx explorer's battery settings is not optimized-restricted, but instead optimized-unrestricted, 
 
-q: on my phone I have no sound on some video files:  
+q: on my phone I have no sound on some video files  
 a: some phones do not have some audio codecs available in exo player, such as ac3 sound codec. use another player for shared video files, such as mpv, vlc, on cx explorer video player  
 
 
